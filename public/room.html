@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>繪「塗」人生 Draw Life</title>
+        <link rel='stylesheet' href='lib/bootstrap/css/bootstrap.css' />
+        <link rel='stylesheet' href='css/style.css' />
+        <link rel='stylesheet' href='lib/bootstrap/css/bootstrap-responsive.css' />
+        <link rel='stylesheet' href='css/login.css' />
+        
+        <link rel='stylesheet' href='/css/chat.css' />
+        <link rel='stylesheet' href='/css/drawlife.css' />
+        
+        <link rel="icon" type="image/png" href="images/lollipop-3.png" />
+        <!--    include library         -->
+        <script src="lib/moment.min.js" type="text/javascript"></script>
+        <script src="lib/jquery-1.8.2.js" type="text/javascript"></script>
+        <script src="lib/jquery.event.drag-2.0.min.js" type="text/javascript"></script>
+        <script src="lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+        
+        <script src="lib/LoadTemplate.js" type="text/javascript"></script>
+        <script src="js/facebook-connect.js"></script>
+        <script src="http://connect.facebook.net/en_US/all.js"></script>
+
+<!--
+        <script src="js/drawlife.js" type="text/javascript"></script>
+-->
+        <script src="socket.io/socket.io.js" type="text/javascript"></script>
+        <script src="js/handshake.js" type="text/javascript"></script>
+        
+        <script src="js/init.js" type="text/javascript"></script>
+        <script src="js/chat.js" type="text/javascript"></script>
+
+        
+        <script type="text/javascript">
+            var HOME;
+            var CONFIG = {
+              tmpl: {
+                hall: 'tpl/hall.tmpl.htm',
+                draw: 'tpl/drawlife.tmpl.htm'
+              }
+            }
+            function loadTemplate(file, user){
+              var tpl = new TemplateClass();
+              return tpl.LoadTemplate(file);;
+            }
+
+            $(function(){
+              /*
+              var str = Math.round(Math.random() * 100000) + '';
+              var name = prompt(" What's your name?", "");
+              var user = {
+                  id: str,
+                  name: name
+              }
+              */
+              fbook.getStatus(start)
+              function start(user){
+                console.log(user)
+                app.joinPlayer(user);
+                HOME = loadTemplate(CONFIG.tmpl.hall);
+                $('.draw_area').html(HOME);
+              }
+              
+              /*
+              console.log('1234')
+              $('.draw_area').load(CONFIG.tmpl.hall, function(){
+                console.log('afgdsg')
+                var a= {};
+                a.id = 'abc';
+                a.num = '2';
+                a.member = [1,2,3,4];
+                a.people = 4;
+                a.count = 4;
+                a.name = 'ccc'
+                var tmpl = hall.roomTmpl(a)
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.$room_content.append(tmpl);
+                hall.rooms = [a];
+                hall.roomEvents();
+              })
+*/
+              
+
+            })
+            
+
+        </script>
+
+    </head>
+    <body>
+        <div class="drawlife">
+            <div class="player_info">
+                <ul class="player_content"><ul>
+            </div>
+            <div class="drawlife_box">
+                <div class="drawlife_content">
+                    <div class="draw_area">
+                        
+                    </div>
+                    <div class="chat_area">
+                        <div class="main-box">
+                            <div class="chat">
+                              <div class="chat-bd">
+                                <div class="chat-msgs"></div>
+                              </div>
+                            </div>
+                            <form class="chat-form">
+                              <div class="chat-fl">
+                                <input class="chat-input" type="text" placeholder="輸入訊息" maxlength="200">
+                              </div>
+                              <div class="chat-fr">
+                                <a class="chat-submit btn btn-primary">
+                                  <i class="icon-bullhorn"></i>
+                                </a>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="fb-root"></div>
+
+    </body>
+</html>

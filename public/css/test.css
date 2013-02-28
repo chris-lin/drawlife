@@ -1,0 +1,42 @@
+.drawlife_box{
+  position: relative;
+  margin: 0 auto;
+  border:2px solid yellowgreen;
+  overflow:hidden;
+}
+
+.drawlife_content{
+  position: relative;
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  border:2px solid orange;
+  overflow:hidden;
+}
+
+.draw_area{
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    background:#fff;
+    border-radius:10px;
+    border:solid 2px blue;
+}
+
+#drawBoard{
+/*
+    width:500px;
+    height:500px;
+*/
+/*
+    border: solid 1px blue;
+*/
+}
+/* ------ chat area ----- */
+
+.chat_area{
+    width: 200px;
+    height: 660px;
+    display: inline-block;
+    border:solid 1px green;
+}

@@ -1,0 +1,184 @@
+/*
+html { 
+	background: url(../images/063.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+*/
+
+
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+}
+
+.drawlife{
+    position: relative;
+    margin:0 auto;
+    padding: 0 10px;
+    width: 1260px;
+    height: 720px;
+    border:solid 0px red;
+}
+
+/* ----- play info ----- */
+
+.player_info{
+    width:1250px;
+    overflow:hidden;
+    margin: 5px;
+/*
+    border:solid 1px green;
+*/
+   
+}
+
+.player_content{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+/*
+    border:solid 1px yellow;
+*/
+}
+
+.player_list{
+    float:left;
+    vertical-align:middle;
+/*
+    border:solid 1px blue;
+*/
+}
+
+
+.player_list > a{
+  text-decoration: none;
+  vertical-align:middle;
+  font-size: 32px;
+  border: 0px solid;
+}  
+
+.drawlife_box{
+  position: relative;
+  margin: 0 auto;
+  border:0px solid yellowgreen;
+  overflow:hidden;
+}
+
+.drawlife_content{
+  position: relative;
+  width: 1260px;
+
+  margin: 0 auto;
+  border:0px solid orange;
+  overflow:hidden;
+}
+
+.draw_area{
+    float: left;
+    width: 900px;
+    height: 660px;
+    /*
+    background: #fff url('../images/drawbg-4.jpg') no-repeat;
+    background-size:100% 100%;
+    */
+    border-radius:6px;
+    border:0px solid blue;
+}
+
+.button_block{
+    text-align:center;
+    margin:4px 0px 10px 0px;
+
+/*
+    border:solid 2px red
+*/
+
+}
+
+.clear{
+    flaot:left;
+    width:150px;
+/*
+    margin:0px 10px 0px 10px;
+*/
+}
+
+.eraser{
+    flaot:left;
+    width:150px;
+/*
+    margin:0px 10px 0px10px;
+*/
+}
+
+
+.color{
+    margin:0;
+/*
+    border:solid 3px red;
+*/
+    border-radius:10px;
+    width:100%;
+    text-align:center;
+}
+
+.btn-color{
+  width: 50px;
+}
+
+.selection_color{
+    width:150px;
+}
+
+.selection_line{
+    width:150px;
+}
+
+/* ------ chat area ----- */
+
+.chat_area{
+    float: right;
+    width: 350px;
+    height: 660px;
+    display: inline-block;
+    border:solid 0px green;
+}
+
+
+/* ------ room area ----- */
+
+.roomModel{
+  width:310px;
+  text-align: center;
+}
+
+.roomModel-table{
+  overflow: hidden;
+  text-align: center;
+}
+
+.room_box{
+  width: 900px;
+
+  border: 0px solid black;
+}
+
+.room_content{
+  border: 0px solid red;
+}
+
+.room_content > .room{
+  display: inline-block;
+  border: 0px solid green;
+  text-align: center;
+  cursor: pointer;
+}
+
+.room_content > .room_info{
+  text-align: center;
+}

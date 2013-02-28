@@ -1,0 +1,54 @@
+<% include head %>
+
+<link rel='stylesheet' href='/css/chat.css' />
+<link rel='stylesheet' href='/css/drawlife.css' />
+               
+<script src="js/init.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        function start(user){
+          //$('.container > h1').html(user.name)
+          handshake.getPlayer();
+        }
+        fbook.getStatus(start);
+    })
+</script>        
+
+<div class="drawlife">
+    <div class="player_info">
+        <ul class="player_content"><ul>
+    </div>
+    <div class="drawlife_box">
+        <div class="drawlife_content">
+            <div class="draw_area">                        
+            </div>
+            <div class="chat_area">
+                <div class="main-box">
+
+                          <div class="chat">
+                            <div class="chat-bd">
+                              <div class="chat-msgs"></div>
+                            </div>
+                          </div>
+
+
+                          <form class="chat-form">
+                            <div class="chat-fl">
+                              <input class="chat-input" type="text" placeholder="輸入訊息" maxlength="200">
+                            </div>
+                            <div class="chat-fr">
+                              <a class="chat-submit btn btn-primary">
+                                <i class="icon-bullhorn"></i>
+                              </a>
+                            </div>
+                          </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="fb-root"></div>

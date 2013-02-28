@@ -1,0 +1,25 @@
+<% include head %>
+<div class="container container-bg">
+  <div class="login-block">
+	<div class="well login-form" accept-charset="utf-8">
+	  <label class="form-title">繪「塗」人生 Draw Life</label>
+      <img src="images/lollipop-3.png" />
+	  <button id="login-btn" class="btn btn-large btn-primary">
+      <i class="icon-lock icon-white"></i> Facebook Login
+	  </button><br/>
+	</div>
+  </div>
+</div>
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+	$(function(){
+      function start(user){
+          handshake.joinPlayer(user);
+          location = 'room.html';
+      }
+      fbook.loginEvent(start);
+      
+    })
+</script>
+<% include foot %>

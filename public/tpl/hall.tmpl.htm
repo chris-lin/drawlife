@@ -1,0 +1,44 @@
+<script src="js/hall.js" type="text/javascript"></script>
+<div id="myModal" class="roomModel modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="myModalLabel">Room Option</h3>
+    </div>
+    <div class="modal-body">
+        <div class="roomModel-table">
+            <input class="roomModel-name" type="text" placeholder="room name" maxlength="100">
+        </div>
+        <hr>
+        <div class="roomModel-table">
+            <input class="roomModel-people" type="text" placeholder="room number" maxlength="10">
+        </div>
+        <hr>
+        <p>
+            <h4>background select</h4>
+        </p>
+        <div class="btn-group" data-toggle="buttons-radio">
+          <button type="button" class="roomModel-bg btn btn-info" data-val="1">木板</button>
+          <button type="button" class="roomModel-bg btn btn-info" data-val="2">黑板</button>
+          <button type="button" class="roomModel-bg btn btn-info" data-val="3">筆記</button>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal">Close</button>
+      <button class="create_room btn btn-primary" data-dismiss="modal">Create</button>
+    </div>
+</div>
+
+<div id="myAlert" class="roomModel alert alert-error modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <strong>This room is full people!</strong> 
+</div>
+
+
+<div class="button_block">
+    <div id="tools" class="btn-group">
+        <a data-toggle="modal" href="#myModal" class=" btn btn-info">Create Room</a>
+    </div>
+</div>
+<div class="room_box">
+    <div class="room_content"></div>
+</div>

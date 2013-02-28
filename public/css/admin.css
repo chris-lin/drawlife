@@ -1,0 +1,71 @@
+.admin-block {
+    background-color: #FFFFFF;
+    /border:1px solid #ff0000;
+    /border-radius: 10px 10px 0 0;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    padding-left:0;
+    padding-right:0;
+    
+}
+
+.admin-block > .dashboard {
+    
+    //height:100%;
+    /background-color: #404040;
+}
+
+
+.admin-nav {
+    background-color: #EEEEEE;
+    padding: 2px 0;
+    margin: 0;
+   
+}
+
+
+
+.admin-ul, {
+    padding: 0;
+    margin: 0;
+}
+
+.admin-ul > li{
+    padding: 0;
+    margin: 0;
+    background-color: #EEEEEE;
+    line-height:64px;
+    border-bottom: 1px solid #DEDEDE;
+    position: relative;
+    
+}
+.admin-ul > li > a:hover{
+    
+    margin: 0;
+}
+.admin-ul > li > a {
+    padding-left: 10px;
+    color:#6B6B6B;
+}
+.admin-pagination li{
+
+    height:20px;
+    overflow:hidden;
+}
+.admin-ul > .admin-active {
+    border-bottom: 0;
+     z-index:100;
+}
+
+.admin-ul > .admin-active > a{
+    background-color: #FFFFFF;
+    
+    box-shadow: -5px 1px 5px #AAAAAA;
+}
+.admin-ul > .admin-active > a:hover {
+    
+    background-color: #FFF;
+}

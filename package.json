@@ -1,0 +1,24 @@
+{
+  "name": "nko3-taiwan-up-up",
+  "version": "0.0.0-38",
+  "description": "Node Up Up 好好玩",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nko3/taiwan-up-up.git"
+  },
+  "dependencies": {
+    "zeparser": "0.0.5",
+    "express": "3.0.0",
+    "ejs": ">= 0.0.1",
+    "socket.io": ">= 0.0.1",
+    "connect": "1.8.7"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "subdomain": "taiwan-up-up.nko3"
+}

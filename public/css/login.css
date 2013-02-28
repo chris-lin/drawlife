@@ -1,0 +1,45 @@
+.login-block {
+    margin:0 auto;
+    max-width: 350px;
+    text-align: center;
+    font-size: 1em;
+}
+@media (max-width: 979px) {
+    .login-block {
+        margin-top:20px;
+    }
+}
+.login-block > a{
+    color: #fff;
+}
+
+.login-form {
+    margin-top:15%;
+    text-align: center;
+}
+
+.login-form > .form-title {
+    width: 280px;
+    margin:5px auto;
+    font-size: 1.5em;
+    line-height:1.5;
+    
+    text-align: center;
+}
+
+.login-form > input{
+    font-size: 1em;
+    margin:5px auto;
+    width: 230px;
+}
+
+.login-form > button{
+    font-size: 1em;
+    line-height:1.5;
+    margin:15px auto;
+    width: 230px;
+}
+
+.login-form > #login-btn{
+    width: 230px;
+}
